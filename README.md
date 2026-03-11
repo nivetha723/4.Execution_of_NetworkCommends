@@ -58,10 +58,10 @@ while True:
     ip = dns_table.get(domain, "Domain not found")
     # Send response back to client
     server_socket.sendto(ip.encode(), client_address)
-
+```
     
-client.py
-
+##client.py
+```
 import socket
 # Create UDP socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
