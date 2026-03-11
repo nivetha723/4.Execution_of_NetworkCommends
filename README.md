@@ -29,7 +29,7 @@ This commands includes
 <BR> 
 ## Program 
 server.py
-~~~
+
 import socket
 
 # DNS records (simulated database)
@@ -56,8 +56,10 @@ while True:
     ip = dns_table.get(domain, "Domain not found")
     # Send response back to client
     server_socket.sendto(ip.encode(), client_address)
+
     
 client.py
+
 import socket
 # Create UDP socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -75,7 +77,7 @@ ip_address, server = client_socket.recvfrom(1024)
 print("IP Address:", ip_address.decode())
 
 client_socket.close()
-~~~
+
 ## output
 
 server
