@@ -29,7 +29,7 @@ This commands includes
 <BR> 
 ## Program 
 server.py
-
+~~~
 import socket
 
 # DNS records (simulated database)
@@ -77,7 +77,7 @@ ip_address, server = client_socket.recvfrom(1024)
 print("IP Address:", ip_address.decode())
 
 client_socket.close()
-
+~~
 ## output
 
 server
